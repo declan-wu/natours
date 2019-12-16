@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; bad pracice, this disable users' ability to setting browser default font size*/
+  // this defines what rem is, so should be included in base, not typography
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}

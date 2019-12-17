@@ -264,8 +264,13 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  margin-top: -20vh;
+  margin-top: -12vh;
   background-image: linear-gradient(to right bottom, rgba(4, 138, 129, 0.8), rgba(6, 214, 158, 0.8), rgba(6, 175, 213, 0.8)), url(../img/nat-4.jpg);
-  transform: skewY(-7deg); }
+  transform: skewY(-8.3deg); }
   .section-features > * {
-    transform: skewY(7deg); }
+    transform: skewY(8.3deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }

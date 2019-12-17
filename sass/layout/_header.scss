@@ -10,6 +10,7 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  // using clip path polygon to skew/cut the section; alternatively we can use transform: skew()
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {

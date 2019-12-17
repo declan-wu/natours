@@ -187,11 +187,32 @@ body {
       top: 10rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #06d69e;
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(-o 0.5rem);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.8); }
+    transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right bottom, rgba(4, 138, 129, 0.8), rgba(6, 214, 158, 0.8), rgba(6, 175, 213, 0.8));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.15); }
+  .feature-box__text {
+    font-size: 1.6rem; }
 
 .header {
   height: 95vh;
@@ -233,8 +254,18 @@ body {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
     width: calc( (100% - 2 * 6rem) * 2 / 3 + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
 
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -20vh;
+  background-image: linear-gradient(to right bottom, rgba(4, 138, 129, 0.8), rgba(6, 214, 158, 0.8), rgba(6, 175, 213, 0.8)), url(../img/nat-4.jpg);
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
